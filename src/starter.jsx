@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Heading as Icon } from 'styled-icons/fa-solid';
+import { Component as Icon } from '@styled-icons/boxicons-solid';
 import { PropTypes, EditorTypes } from 'sitecloud-components';
 
 const Container = styled.div`
   color: ${(props) => props.color || 'black'};
 `;
 
-const Example = ({ children, ...props }) => (
-  <Container {...props}>{children}</Container>
+const Starter = ({ ...props }) => (
+  <Container {...props}>This is your first component</Container>
 );
 
-Example.props = {
+Starter.props = {
   aspect: {
     color: {
       type: PropTypes.Color,
@@ -23,6 +23,6 @@ Example.props = {
   }
 };
 
-Example.icon = <Icon size="1rem" />;
+Starter.icon = <Icon size="1.2rem" />;
 
-export default Example;
+export default Starter;

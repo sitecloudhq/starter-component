@@ -34,7 +34,8 @@ export default [
         format: 'umd',
         globals: {
           react: 'React',
-          'styled-components': 'styled'
+          'styled-components': 'styled',
+          'react-helmet': 'react-helmet'
         },
         name: `${external_namespace}.${pkg.name}`
       }
