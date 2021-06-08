@@ -1,4 +1,4 @@
-import Starter from './starter.jsx';
+import Starter from './Starter';
 
 export const components = {
   Starter
