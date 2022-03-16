@@ -1,5 +1,5 @@
 {
-  "version": "1.0.10",
+  "version": "1.0.11",
   "module": "lib/index.umd.js",
   "name": "@sitecloud/starter",
   "scripts": {
