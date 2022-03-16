@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { Component as Icon } from '@styled-icons/boxicons-solid';
 import { PropTypes, EditorTypes } from '@sitecloud/components';
+import { Component } from '@sitecloud/components';
 
 const Container = styled.div`
-  color: ${props => props.color || 'black'};
+  color: ${(props) => props.color || 'black'};
 `;
 
-const Starter = ({ ...props }) => (
+const Starter: Component = (props) => (
   <Container {...props}>This is your first component</Container>
 );
 

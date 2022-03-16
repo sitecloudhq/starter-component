@@ -1,7 +1,6 @@
 import React from 'react';
-
 import { action } from '@storybook/addon-actions';
-import Starter from '../src/starter';
+import { Starter } from '../src';
 
 export default {
   title: 'Starter',
