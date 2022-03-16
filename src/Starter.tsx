@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Component as Icon } from '@styled-icons/boxicons-solid';
-import { PropTypes, EditorTypes } from '@sitecloud/components';
-import { Component } from '@sitecloud/components';
+import { Component, PropTypes, EditorTypes } from '@sitecloud/components';
 
 const Container = styled.div`
   color: ${(props) => props.color || 'black'};
