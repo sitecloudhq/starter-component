@@ -1,3 +1,3 @@
 import Starter from './Starter';
 
-export { Starter };
+export const components = { Starter };

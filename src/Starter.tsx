@@ -5,17 +5,21 @@ import { Component, PropTypes, EditorTypes } from '@sitecloud/components';
 
 const Container = styled.div`
   color: ${(props) => props.color || 'black'};
+  border: 10px solid red;
+  margin-top: 1rem;
 `;
 
 const Starter: Component = (props) => (
-  <Container {...props}>This is your first component</Container>
+  <Container {...props}>
+    <div>This is your first component</div>
+  </Container>
 );
 
 Starter.props = {
   aspect: {
     color: {
       type: PropTypes.Color,
-      default: 'blue',
+      default: 'black',
       editor: EditorTypes.Color,
       required: false,
       enabled: false
