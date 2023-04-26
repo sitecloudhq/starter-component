@@ -8,7 +8,26 @@ module.exports = {
       ...(config.resolve.modules || []),
       path.resolve(__dirname, '..')
     ];
-    config.resolve.extensions.push('.ts', '.tsx');
+
+    config.module.rules.push({
+      test: /\.(js|jsx|ts|tsx)$/,
+      exclude: /node_modules/,
+      use: [
+        {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react',
+              '@babel/preset-typescript'
+            ]
+          }
+        }
+      ]
+    });
+
+    config.resolve.extensions.push('.ts', '.tsx', '.js', '.jsx');
+
     return config;
   },
   core: {
